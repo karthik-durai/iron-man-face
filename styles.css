@@ -6,6 +6,474 @@ body {
   width: 100%;
 }
 
-.bg-yellow {
+.bg {
   background: linear-gradient(to bottom right, #ebc13b 50%, #5c0b11 50%);
+}
+
+.iron-man-face {
+  font-size: 4.5em;
+  width: 3em;
+  height: 5em;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+.iron-man__head--part1, .iron-man__head--part2 {
+  background: #ae1927;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  position: absolute;
+}
+
+.iron-man__head--part2 {
+  top: 0.45em;
+  width: 2.97em;
+  left: 0.45%;
+}
+
+.iron-man__head--part3 {
+  border-top: 1.6em solid #ae1927;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  width: 2.3em;
+  position: absolute;
+  top: 2.15em;
+  left: 0.05em;
+}
+
+.iron-man__head--part4 {
+  border-top: 1em solid #ae1927;
+  border-left: 0.7em solid transparent;
+  border-right: 0.7em solid transparent;
+  width: 0.9em;
+  position: absolute;
+  top: 3.75em;
+  left: 0.35em;
+}
+
+.iron-man__forehead--back {
+  background-color: #ebc13b;
+  height: 1.62em;
+  left: 50%;
+  position: absolute;
+  top: .5em;
+  transform: translateX(-50%);
+  width: 2.3em;
+}
+
+.iron-man__forehead--back::after, .iron-man__forehead--back::before {
+  content: '';
+  background-color: #ebc13b;
+  height: 1.1em;
+  width: 1.1em;
+  position: absolute;
+  top: 0.225em;
+}
+
+.iron-man__forehead--back::after {
+  right: -.575em;
+  border-radius: 0 100%;
+  transform: rotate(42.5deg)
+}
+
+.iron-man__forehead--back::before {  
+  left: -.575em;
+  border-radius: 100% 0;
+  transform: rotate(-42.5deg)
+}
+
+.iron-man__forehead-curve--bg {
+  background-color: #ae1927;
+  height: 1em;
+  width: 2.25em;
+  position: absolute;
+  top: 0.5em;
+  left: 0.375em;
+}
+
+.iron-man__forehead-curve--left, .iron-man__forehead-curve--right {
+  background-color: #ebc13b;
+  height: 0.7em;
+  width: 0.8em;
+  position: absolute;
+  top: 0.25em;
+}
+
+.iron-man__forehead-curve--left {
+  left: 0.43em;
+  border-radius: 0 100% 0 100%;
+  transform: rotate(-12deg) scaleY(0.5)
+}
+
+.iron-man__forehead-curve--right {
+  right: 0.43em;
+  border-radius: 100% 0 100% 0;
+  transform: rotate(12deg) scaleY(0.5)
+}
+
+.iron-man__forehead-bottom {
+  border-top: 0.5em solid #ebc13b;
+  position: absolute;
+  top: 1.5em;
+  left: 0.0125em;
+  width: 2.9em;
+  border-left: 0.0375em solid transparent;
+  border-right: 0.0375em solid transparent;
+}
+
+.iron-man__forehead-front--left--part1,
+.iron-man__forehead-front--left--part2,
+.iron-man__forehead-front--right--part1,
+.iron-man__forehead-front--right--part2 {
+  background-color: #ebc13b;
+  height: 1em;
+  position: absolute;
+}
+
+.iron-man__forehead-front--left--part1,
+.iron-man__forehead-front--right--part1 {
+  height: 1em;
+  width: 0.92em;
+  position: absolute;
+  top: 0.58em;
+}
+
+.iron-man__forehead-front--left--part1 {
+  left: 0.24em;
+  transform: rotate(12deg)
+}
+
+.iron-man__forehead-front--right--part1 {
+  right: 0.24em;
+  transform: rotate(-12deg)
+}
+
+.iron-man__forehead-front--left--part2,
+.iron-man__forehead-front--right--part2 {
+  height: 0.9em;
+  width: 0.25em;
+  position: absolute;
+  top: 0.68em;
+}
+
+.iron-man__forehead-front--left--part2 {
+  left: 1em;
+  transform: rotate(3deg);
+  transform-origin: top left
+}
+
+.iron-man__forehead-front--right--part2 {
+  right: 1em;
+  transform: rotate(-3deg);
+  transform-origin: top right
+}
+
+.iron-man__cheek-bg--left, .iron-man__cheek-bg--right {
+  background-color: black;
+  height: 2em;
+  width: 2em;
+  position: absolute;
+  top: 2em;
+  border-radius: 50%;
+}
+
+.iron-man__cheek-bg--left {
+  left: 0.4em;
+}
+
+.iron-man__cheek-bg--right{
+  right: 0.4em;
+}
+
+.iron-man__cheek--part1 {
+  border-top: 0.6em solid #ebc13b;
+  position: absolute;
+  top: 2em;
+  left: 0.05em;
+  width: 2.6em;
+  border-left: 0.15em solid transparent;
+  border-right: 0.15em solid transparent;
+}
+
+.iron-man__cheek--part2 {
+  border-top: 1em solid #ebc13b;
+  position: absolute;
+  top: 2.6em;
+  left: 0.2em;
+  width: 1.6em;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+}
+
+.iron-man__cheek--part3 {
+  border-bottom: 0.5em solid #ebc13b;
+  position: absolute;
+  top: 3.6em;
+  left: 0.65em;
+  width: 1.6em;
+  border-left: 0.05em solid transparent;
+  border-right: 0.05em solid transparent; 
+}
+
+.iron-man__mouth--middle {
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  transform: scaleY(.25);
+}
+
+.iron-man__mouth--middle::before {
+  background-color: black;
+  top: -0.5em;
+}
+
+.iron-man__mouth--middle::after {
+  background-color: #ebc13b;
+  top: -0.65em;
+}
+
+.iron-man__mouth--middle::before, .iron-man__mouth--middle::after {
+  content: "";
+  border-radius: 100% 0;
+  height: 1em;
+  width: 1em;
+  left: -0.5em;
+  transform: rotate(45deg) translate(-50%,-50%);
+  position: absolute;
+}
+
+.iron-man__mouth--left, .iron-man__mouth--left::before,
+.iron-man__mouth--right, .iron-man__mouth--right::before {
+  position: absolute;
+  border-left: 0.1em solid transparent;
+  border-right: 0.1em solid transparent;
+}
+
+.iron-man__mouth--left {
+  border-top: .125em solid black;
+  top: 3.825em;
+  left: 0.7em;
+  transform: rotate(-10deg);
+}
+
+.iron-man__mouth--left::before {
+  content: "";
+  border-top: 0.115em solid #ebc13b;
+  top:-0.15em;
+  left: -0.1em;
+}
+
+.iron-man__mouth--right {
+  border-top: .125em solid black;
+  top: 3.825em;
+  right: 0.7em;
+  transform: rotate(10deg);
+}
+
+.iron-man__mouth--right::before {
+  content: "";
+  border-top: 0.115em solid #ebc13b;
+  top:-0.15em;
+  left: -0.1em;
+}
+
+.iron-man__chin--middle {
+  border-top: 0.2em solid #ebc13b;
+  border-left: 0.08em solid transparent;
+  border-right: 0.08em solid transparent;
+  position: absolute;
+  top: 4.1em;
+  left: 0.9em;
+  width: 1em;
+}
+
+.iron-man__chin--left--part1 {
+  border-top: 0.3em solid #ebc13b;
+  border-right: 0.3em solid transparent;
+  position: absolute;
+  width: .3em;
+  top: 4.1em;
+  left: 1.01em;
+}
+
+.iron-man__chin--right--part1 {
+  border-top: 0.3em solid #ebc13b;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  width: .3em;
+  top: 4.1em;
+  right: 1.01em;
+}
+
+.iron-man__chin--left--part2 {
+  border-top: 0.45em solid #ebc13b;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  top: 4.1em;
+  left: 0.65em;
+  /* transform: rotate(7deg); */
+}
+
+.iron-man__chin--right--part2 {
+  border-top: 0.45em solid #ebc13b;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  position: absolute;
+  top: 4.1em;
+  right: 0.65em;
+  /* transform: rotate(-7deg); */
+}
+
+.iron-man__eye--furrow, .iron-man__eye--furrow::before {
+  position: absolute;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+}
+
+.iron-man__eye--furrow {
+  border-top: .075em solid rgba(0,0,0,.5);
+  top: 2.5em;
+  left: 1em;
+}
+
+.iron-man__eye--furrow::before {
+  content: '';
+  border-top: .075em solid #ebc13b;
+  top: -0.09em;
+  left: -0.5em;
+}
+
+.iron-man__eye--left--bg--part1 {
+  position: absolute;
+  top: 2.5em;
+  left: 0.4em;
+}
+
+.iron-man__eye--left--bg--part1::before {
+  content: '';
+  border-bottom: 0.15em solid #bda441;
+  border-right: 0.8em solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.iron-man__eye--left--bg--part1::after {
+  content: '';
+  border-top: 0.15em solid #bda441;
+  border-left: 0.8em solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.iron-man__eye--left--bg--part2 {
+  border-top: 0.15em solid #bda441;
+  border-left: 0.2em solid transparent;
+  width: 0.65em;
+  position: absolute;
+  top: 2.53em;
+  left: 0.359em;
+}
+
+.iron-man__eye--left--part1 {
+  position: absolute;
+  top: 2.5em;
+  left: 0.35em;
+}
+
+.iron-man__eye--left--part1::after {
+  content: '';
+  border-bottom: 0.15em solid #ffffff;
+  border-right: 0.8em solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.iron-man__eye--left--part1::before {
+  content: '';
+  border-top: 0.15em solid #ffffff;
+  border-left: 0.8em solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.iron-man__eye--left--part2 {
+  border-top: 0.15em solid #ffffff;
+  border-left: 0.2em solid transparent;
+  width: 0.59em;
+  position: absolute;
+  top: 2.5em;
+  left: 0.35em;
+}
+
+.iron-man__eye--right--bg--part1 {
+  position: absolute;
+  top: 2.5em;
+  right: 0.4em;
+}
+
+.iron-man__eye--right--bg--part1::before {
+  content: '';
+  border-bottom: 0.15em solid #bda441;
+  border-left: 0.8em solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.iron-man__eye--right--bg--part1::after {
+  content: '';
+  border-top: 0.15em solid #bda441;
+  border-right: 0.8em solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.iron-man__eye--right--bg--part2 {
+  border-top: 0.15em solid #bda441;
+  border-right: 0.2em solid transparent;
+  width: 0.65em;
+  position: absolute;
+  top: 2.53em;
+  right: 0.359em;
+}
+
+.iron-man__eye--right--part1 {
+  position: absolute;
+  top: 2.5em;
+  right: 0.35em;
+}
+
+.iron-man__eye--right--part1::after {
+  content: '';
+  border-top: 0.15em solid #ffffff;
+  border-right: 0.8em solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.iron-man__eye--right--part1::before {
+  content: '';
+  border-bottom: 0.15em solid #ffffff;
+  border-left: 0.8em solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.iron-man__eye--right--part2 {
+  border-top: 0.15em solid #ffffff;
+  border-right: 0.2em solid transparent;
+  width: 0.59em;
+  position: absolute;
+  top: 2.5em;
+  right: 0.35em;
 }
